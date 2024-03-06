@@ -4,9 +4,35 @@
 // Crie uma função que receba uma lista de números como parâmetro e retorne o
 // maior número da lista.
 
+function encontrarMaiorNumero(lista) {
+    let maior = lista[0];
+    for (let i = 1; i < lista.length; i++) {
+        if (lista[i] > maior) {
+            maior = lista[i]; 
+        }
+    }
+    return maior;
+}
+
+const numeros = [1, 5, 10, 15, 20];
+console.log("O Maior numero e:", encontrarMaiorNumero(numeros));
+
 // Exercício 2
 // Desenvolva uma função que receba um número como parâmetro e verifique se
 // ele é par ou ímpar. Retorne true se for par e false se for ímpar.
+
+function verificarParOuImpar(numero) {
+    if (numero % 2 === 0) {
+        return true; 
+    } else {
+        return false; 
+    }
+}
+
+const numero1 = 10;
+const numero2 = 5;
+console.log(numero1, "e par?", verificarParOuImpar(numero1)); 
+console.log(numero2, "e par?", verificarParOuImpar(numero2));
 
 // Exercício 3
 // Implemente uma função que calcule a média aritmética de um array de números
