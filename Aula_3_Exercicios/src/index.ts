@@ -14,7 +14,7 @@ function encontrarMaiorNumero(lista) {
     return maior;
 }
 
-const numeros = [1, 5, 10, 15, 20];
+const numeros = [1, 5, 10, 25, 20, 15];
 console.log("O Maior numero e:", encontrarMaiorNumero(numeros));
 
 // Exercício 2
@@ -39,14 +39,53 @@ console.log(numero2, "e par?", verificarParOuImpar(numero2));
 // e retorne o resultado. Utilize essa função para calcular a média de diferentes
 // conjuntos de números.
 
+function calcularMedia(lista) {
+    let soma = 0;
+    for (let i = 0; i < lista.length; i++) {
+        soma += lista[i]; 
+    }
+    return soma / lista.length; 
+}
+
+const conjunto1 = [10, 5, 1, 20, 15];
+const conjunto2 = [2, 4, 6, 8, 10];
+console.log("A media do conjunto 1 e:", calcularMedia(conjunto1)); 
+console.log("A media do conjunto 2 e:", calcularMedia(conjunto2)); 
+
 // Exercício 4
 // Crie uma função que receba uma string como parâmetro e retorne a mesma
 // string com todas as letras em caixa alta. Utilize essa função para converter
 // diferentes strings.
 
+function converterParaCaixaAlta(string) {
+    return string.toUpperCase();
+}
+
+const frase1 = "Ola, mundo!";
+const frase2 = "Bom dia, Boa tarde e Boa Noite!";
+
+console.log("Frase 1 em caixa alta:", converterParaCaixaAlta(frase1)); 
+console.log("Frase 2 em caixa alta:", converterParaCaixaAlta(frase2)); 
+
 // Exercício 5
 // Desenvolva uma função que determine se um número é primo ou não. Retorne
 // true se for primo e false se não for.
+
+function verificarPrimo(numero) {
+    if (numero <= 1) {
+        return false;
+    }
+    for (let i = 2; i <= Math.sqrt(numero); i++) {
+        if (numero % i === 0) {
+            return false; 
+        }
+    }
+    return true; 
+}
+
+console.log(numero2, "é primo?", verificarPrimo(numero2)); 
+console.log(numero1, "é primo?", verificarPrimo(numero1)); 
+
 
 // Exercício 6
 // Implemente uma função que inverta a ordem dos elementos em um array.
