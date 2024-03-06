@@ -14,7 +14,7 @@ function encontrarMaiorNumero(lista) {
     return maior;
 }
 
-const numero = [1, 5, 10, 25, 20, 15];
+const numeros = [1, 5, 10, 25, 20, 15];
 console.log("O Maior numero e:", encontrarMaiorNumero(numeros));
 
 // Exercício 2
