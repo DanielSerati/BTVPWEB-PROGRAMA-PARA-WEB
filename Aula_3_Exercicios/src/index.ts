@@ -83,8 +83,8 @@ function verificarPrimo(numero) {
     return true; 
 }
 
-console.log(numero2, "é primo?", verificarPrimo(numero2)); 
-console.log(numero1, "é primo?", verificarPrimo(numero1)); 
+console.log(numero2, "eh primo?", verificarPrimo(numero2)); 
+console.log(numero1, "eh primo?", verificarPrimo(numero1)); 
 
 
 // Exercício 6
